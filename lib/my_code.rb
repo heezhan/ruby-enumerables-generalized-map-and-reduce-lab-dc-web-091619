@@ -19,12 +19,6 @@ def reduce(source_array, starting_point = 0)
   end
   if starting_point == nil 
     return false
-  elsif starting_point == true
-    return true 
   end 
   return starting_point  
 end
-
-# no starting point, starting point {|memo, n| memo + n}
-# all true {|memo, n| memo && n}
-# any true {|memo, n| memo || n}
