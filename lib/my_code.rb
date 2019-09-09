@@ -18,7 +18,9 @@ def reduce(source_array, starting_point = 0)
     i += 1 
   end
   if starting_point == nil 
-    return false 
+    return false
+  elsif starting_point == true
+    return true 
   end 
   return starting_point  
 end
