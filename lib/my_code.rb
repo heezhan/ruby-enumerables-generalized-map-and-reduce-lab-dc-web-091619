@@ -17,6 +17,9 @@ def reduce(source_array, starting_point = 0)
     starting_point = yield(source_array[i], starting_point)
     i += 1 
   end
+  if starting_point == nil 
+    return false 
+  end 
   return starting_point  
 end
 
